@@ -17,6 +17,7 @@
 #include "memory.h"
 #include "quality.h"
 #include "hash.h"
+#include "static_dict_lut.h"
 
 #if defined(__cplusplus) || defined(c_plusplus)
 extern "C" {

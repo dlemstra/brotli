@@ -266,6 +266,7 @@ EXT_MODULES = [
             'c/enc/ringbuffer.h',
             'c/enc/static_dict.h',
             'c/enc/static_dict_lut.h',
+            'c/enc/static_dict_word.h',
             'c/enc/utf8_util.h',
             'c/enc/write_bits.h',
         ],

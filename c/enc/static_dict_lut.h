@@ -10,20 +10,11 @@
 #define BROTLI_ENC_STATIC_DICT_LUT_H_
 
 #include <brotli/types.h>
+#include <static_dict_word.h>
 
 #if defined(__cplusplus) || defined(c_plusplus)
 extern "C" {
 #endif
-
-typedef struct DictWord {
-  /* Highest bit is used to indicate end of bucket. */
-  uint8_t len;
-  uint8_t transform;
-  uint16_t idx;
-} DictWord;
-
-static const int kDictNumBits = 15;
-static const uint32_t kDictHashMul32 = 0x1E35A7BD;
 
 static const uint16_t kStaticDictionaryBuckets[32768] = {
 1,0,0,0,0,0,0,0,0,3,6,0,0,0,0,0,20,0,0,0,21,0,22,0,0,0,0,0,0,0,0,23,0,0,25,0,29,

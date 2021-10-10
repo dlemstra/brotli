@@ -13,7 +13,7 @@
 #include <brotli/types.h>
 #include "compound_dictionary.h"
 #include "memory.h"
-#include "static_dict_lut.h"
+#include "static_dict_word.h"
 
 #if defined(__cplusplus) || defined(c_plusplus)
 extern "C" {
